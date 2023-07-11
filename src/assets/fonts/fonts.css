@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'hack-regular-webfont';
+  src: url('./hack-regular-webfont.woff');
+}
+
+@font-face {
+  font-family: 'hack-bold-webfont';
+  src: url('./hack-bold-webfont.woff');
+}
+
+@font-face {
+  font-family: 'ScalaSans-Regular';
+  src: url('./ScalaSans-Regular.otf');
+}
+
+@font-face {
+  font-family: 'ScalaSans-Bold';
+  src: url('./ScalaSans-Bold.otf');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono-Regular';
+  src: url('./JetBrainsMono-Regular.ttf');
+}

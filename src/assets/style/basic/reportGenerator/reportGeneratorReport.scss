@@ -1,0 +1,19 @@
+img {
+  max-width: 100%;
+  width: 80%;
+}
+.table + .table {
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 1;
+  padding: 10px 0 5px;
+}
+
+@media print {
+  img.is_print_bw {
+    filter: grayscale(1) contrast(2) invert(1);
+  }
+}

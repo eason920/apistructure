@@ -1,0 +1,52 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "build": "vite build --mode dev",
+    "build:ipc": "vite build --mode ipc",
+    "preview": "vite preview",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "axios": "^1.2.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "laravel-echo": "^1.15.0",
+    "mathjs": "^11.8.0",
+    "pinia": "^2.0.29",
+    "pusher-js": "^8.0.2",
+    "vue": "^3.2.45",
+    "vue-axios": "^3.5.2",
+    "vue-json-excel3": "^0.0.8",
+    "vue-router": "^4.1.6",
+    "vue3-print-nb": "^0.1.4",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@jridgewell/sourcemap-codec": "^1.4.14",
+    "@vicons/antd": "^0.12.0",
+    "@vicons/carbon": "^0.12.0",
+    "@vicons/fa": "^0.12.0",
+    "@vicons/fluent": "^0.12.0",
+    "@vicons/ionicons4": "^0.12.0",
+    "@vicons/ionicons5": "^0.12.0",
+    "@vicons/material": "^0.12.0",
+    "@vicons/tabler": "^0.12.0",
+    "@vicons/utils": "^0.1.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "naive-ui": "^2.34.3",
+    "prettier": "^2.8.3",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "vfonts": "^0.0.3",
+    "vite": "^4.0.0"
+  }
+}

@@ -1,0 +1,257 @@
+// --------------------------------
+// -- global
+// --------------------------------
+$g: 3px;
+$footer_height: 40px;
+
+.title {
+  font-weight: bold;
+  margin-right: 12px;
+  &.is_sub {
+    margin: 0;
+    // margin {
+    //   right: 0;
+    //   left: 12px !important;
+    // }
+  }
+  & + span {
+    // background-color: #ddd;
+    border-bottom: solid 1px #333;
+  }
+}
+
+span + .title {
+  margin-left: 2vw;
+}
+
+.btn_circle {
+  background: {
+    color: #bbb;
+  }
+  &:hover {
+    background: {
+      color: $color_orange;
+    }
+  }
+}
+
+.btn.is_gonogo {
+  // position: absolute;
+}
+
+// --------------------------------
+// -- structure
+// --------------------------------
+.outerbox {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: $g;
+  height: calc(100% - $footer_height);
+}
+
+.leftbox,
+.rightbox {
+  background-color: #fff;
+}
+
+// ====================================
+// == LEFT
+// ====================================
+$lrPadding: 18px;
+$btn_bottom: 15px;
+$lrInnerBottom: $btn_bottom * 2 + 20px;
+$w_leftbox: 50%;
+.leftbox,
+.rightbox {
+  padding: $lrPadding $lrPadding 0;
+  position: relative;
+}
+
+.leftbox {
+  width: $w_leftbox;
+  border-right: solid $g $color_gray;
+  //
+  .is_left_float {
+    position: absolute;
+    right: $lrPadding;
+    bottom: $btn_bottom;
+    display: flex;
+    .btn + .btn {
+      margin-left: 1vw;
+    }
+  }
+}
+
+.rightbox {
+  width: calc(100% - $w_leftbox);
+  height: 100%;
+}
+
+// --------------------------------
+// -- tbox
+// --------------------------------
+.uutbasic {
+  position: relative;
+  & > div {
+    display: flex;
+    margin-bottom: 5px;
+    span {
+      height: 20px;
+    }
+  }
+}
+
+.uutbasic_ipt1 {
+  width: 100px;
+}
+.uutbasic_select {
+  width: 120px;
+}
+.uutbasic_ipt2 {
+  width: 180px;
+}
+.uutbasic_ipt3 {
+  width: 130px;
+}
+
+.uutbasic_edit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// --------------------------------
+.titlebox .is_1 {
+  text-indent: -1vw;
+}
+
+// --------------------------------
+// --------------------------------
+$w1: 30px;
+$w2: 55px;
+$w4: 35px;
+
+.is_1 {
+  width: $w1;
+}
+.is_2 {
+  width: $w2;
+}
+.is_3 {
+  width: calc(100% - $w1 - $w2 - $w4) !important;
+  padding-right: 0;
+  @extend %row1hide;
+}
+.is_4 {
+  width: $w4;
+  padding-right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titlebox + .listbox {
+  overflow-y: auto;
+  height: calc(100% - 45px - 30px - $lrInnerBottom);
+}
+
+.rightbox .scroller {
+  height: 100%;
+}
+
+// --------------------------------
+.blur_for_unfocus_list {
+  border: none;
+  height: 0;
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+// ====================================
+// == RIGHT
+// ====================================
+.rightbox_itembox {
+  height: calc(100% - 30px - $lrInnerBottom);
+  position: relative;
+  margin-bottom: 30px;
+  .btn {
+    position: absolute;
+    // display: inline-flex;
+    bottom: -40px;
+    right: 0;
+  }
+}
+
+.is_right_float {
+  position: absolute;
+  right: $lrPadding;
+  bottom: $btn_bottom;
+}
+
+.labelbox + .listbox {
+  height: calc(100% - 30px - $btn_bottom);
+}
+
+// ====================================
+// == footerbox
+// ====================================
+.footerbox {
+  background-color: #fff;
+  padding: 0 $lrPadding;
+  height: $footer_height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > * {
+    display: flex;
+  }
+  .btn + .btn {
+    margin-left: 15px;
+  }
+}
+
+// --------------------------------
+.is_status {
+  display: inline;
+}
+
+.is_status_nb {
+  display: none !important;
+}
+
+@media screen and (max-width: $breakpoint_nb) {
+  $w1: 30px;
+  $w2: 55px;
+  $w4: 35px;
+
+  .is_1 {
+    width: $w1;
+  }
+  .is_2 {
+    width: $w2;
+  }
+  .is_3 {
+    width: calc(100% - $w1 - $w2 - $w4) !important;
+  }
+  .is_4 {
+    width: $w4;
+  }
+
+  // --------------------------------
+  $w: 70px;
+  .uutbasic {
+    height: $w;
+  }
+
+  .titlebox + .listbox {
+    height: calc(100% - $w - 30px - $lrInnerBottom);
+  }
+
+  .is_status {
+    display: none;
+  }
+
+  .is_status_nb {
+    display: inline !important;
+  }
+}

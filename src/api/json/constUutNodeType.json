@@ -1,0 +1,23 @@
+{
+  "version": "20230410.11",
+  "mask": "0xFFFFF000",
+  "values": {
+    "NoDefine": "0x00000000",
+    "Output": "0x00001000",
+    "OutputDc": "0x00001001",
+    "OutputAc": "0x00001002",
+    "Input": "0x00001100",
+    "InputDc": "0x00001101",
+    "InputAc": "0x00001102",
+    "Uart": "0x00002000",
+    "UartTx": "0x00002001",
+    "UartRx": "0x00002002",
+    "SPIBus": "0x00003000",
+    "I2C": "0x00004000",
+    "I2C_SCL": "0x00004001",
+    "I2C_SDA": "0x00004002",
+    "PMBus": "0x00005000",
+    "PMBus_SCL": "0x00005001",
+    "PMBus_SDA": "0x00005002"
+  }
+}

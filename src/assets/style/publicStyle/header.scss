@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background: {
+    color: #ccc;
+  }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header_height;
+  width: 96vw;
+}
+.logo {
+  height: 20px;
+  font-size: 0;
+  img {
+    height: 100%;
+  }
+}
+//-----------------
+.msgBox {
+  font-size: 18px;
+  color: #333;
+  display: flex;
+}
+.msgBox_doMain {
+  display: flex;
+  align-items: center;
+}
+$gutter: 10px;
+.msgBox_doMain_name {
+  display: flex;
+  align-items: center;
+  color: $color_orange;
+  // background-color: #fff;
+  // border-radius: 1vw;
+  padding-right: $gutter;
+  margin-left: $gutter;
+  height: 18px;
+  border-right: solid 1px #333;
+}
+//-----------------
+.msgBox_log {
+  display: flex;
+  align-items: center;
+  margin-left: $gutter;
+}
+.msgBox_log_name {
+  color: $color_orange;
+}
+.msgBox_log_btn {
+  margin-left: $gutter;
+  padding-left: $gutter;
+  border-left: solid 1px #333;
+  // height: 1.5vw;
+  line-height: 1;
+  cursor: pointer;
+}
+[v-cloak] {
+  display: none;
+}

@@ -1,0 +1,768 @@
+{
+  "itemListTP": {
+    "data": [
+      {
+        "index": 0,
+        "active": false,
+        "tiName": "Hold On Adject Test"
+      },
+      {
+        "index": 1,
+        "active": true,
+        "tiName": "Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test"
+      },
+      {
+        "index": 2,
+        "active": true,
+        "tiName": "Thum Up & Sabcdef Test"
+      },
+      {
+        "index": 3,
+        "active": false,
+        "tiName": "Select Test"
+      },
+      {
+        "index": 4,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 5,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 6,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 7,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 8,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 9,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 10,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 11,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 12,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 13,
+        "active": true,
+        "tiName": "Input Output Test"
+      },
+      {
+        "index": 14,
+        "active": true,
+        "tiName": "Input Output Test"
+      }
+    ]
+  },
+  "itemListSystem": {
+    "data": [
+      "Hold On Adject Test",
+      "Hold Up & Sabcdef Test",
+      "Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test",
+      "Select Test",
+      "Input Output Test",
+      "Power AC & DC Test",
+      "Futures Vohabc Test Futures Vohabc Test",
+      "Dynamic Test",
+      "Final Test",
+      "Off Power Test",
+      "Dynamic Test Dynamic Test Dynamic Test  Test Dynamic Test",
+      "Hold On Adject Test",
+      "Hold Up & Sabcdef Test",
+      "Thum Up & Sabcdef Test",
+      "Select Test",
+      "Input Output Test",
+      "Hold On Adject Test",
+      "Hold Up & Sabcdef Test",
+      "Thum Up & Sabcdef Test",
+      "Select Test",
+      "Input Output Test"
+    ]
+  },
+  "itemListUser": {
+    "data": [
+      "by user Hold On Adject Test",
+      "by user Hold Up & Sabcdef Test",
+      "by user Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Up & Sabcdef Test Thum Uby user p & Sabcdef Test",
+      "Select Test",
+      "by user Input Output Test",
+      "by user Power AC & DC Test",
+      "by user Futures Vohabc Test Futures Vohabc Test",
+      "by user Dynamic Test",
+      "by user Final Test"
+    ]
+  },
+  "uutList": {
+    "data": {
+      "input_org": [
+        {
+          "title": "+12V",
+          "list": [
+            {
+              "model_id": 1,
+              "key": "Norminal V/F",
+              "value": [110, 60],
+              "unit": ["v", "Hz"]
+            },
+            {
+              "model_id": 1,
+              "key": "Norminal V/F",
+              "value": [220, 50],
+              "unit": ["v", "Hz"]
+            },
+            {
+              "model_id": 2,
+              "key": "Voltage",
+              "value": [90, 264],
+              "unit": ["v", "v"]
+            },
+            {
+              "model_id": 2,
+              "key": "Current",
+              "value": [16.0, 20.0],
+              "unit": ["A", "A"]
+            },
+            {
+              "model_id": 2,
+              "key": "Frequency",
+              "value": [47, 60],
+              "unit": ["Hz", "Hz"]
+            },
+            {
+              "model_id": 0,
+              "key": "Content to",
+              "value": "node1"
+            }
+          ]
+        },
+        {
+          "title": "-12V",
+          "list": [
+            {
+              "model_id": 1,
+              "key": "Norminal V/F",
+              "value": [220, 50],
+              "unit": ["V", "Hz"]
+            },
+            {
+              "model_id": 0,
+              "key": "Content to",
+              "value": "node2"
+            },
+            {
+              "model_id": 0,
+              "key": "Content to",
+              "value": "node3"
+            }
+          ]
+        }
+      ],
+      "output_org": [
+        {
+          "title": "+5v",
+          "list": [
+            {
+              "model_id": 1,
+              "key": "Norminal V/F",
+              "value": [110, 60],
+              "unit": ["V", "Hz"]
+            },
+            {
+              "model_id": 1,
+              "key": "Norminal V/F",
+              "value": [220, 50],
+              "unit": ["V", "Hz"]
+            },
+            {
+              "model_id": 0,
+              "key": "Content to",
+              "value": "node1"
+            }
+          ]
+        },
+        {
+          "title": "+3.3v",
+          "list": [
+            {
+              "model_id": 1,
+              "key": "Norminal V/F",
+              "value": [220, 50],
+              "unit": ["V", "Hz"]
+            },
+            {
+              "model_id": 0,
+              "key": "Content to",
+              "value": "node2"
+            },
+            {
+              "model_id": 2,
+              "key": "Voltage",
+              "value": [90, 264],
+              "unit": ["v", "v"]
+            },
+            {
+              "model_id": 0,
+              "key": "Content to",
+              "value": "node3"
+            }
+          ]
+        }
+      ],
+      "input": [
+        {
+          "title": "",
+          "list": [
+            {
+              "model_id": 2,
+              "key": "Voltage",
+              "value": [100, 240],
+              "unit": ["v", "v"]
+            },
+            {
+              "model_id": 2,
+              "key": "Current",
+              "value": [5, 10],
+              "unit": ["A", "A"]
+            },
+            {
+              "model_id": 2,
+              "key": "Frequency",
+              "value": [50, 60],
+              "unit": ["Hz", "Hz"]
+            },
+            {
+              "model_id": 3,
+              "key": "Content to",
+              "value": "node1",
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "output": [
+        {
+          "title": "+3.3v",
+          "list": [
+            {
+              "model_id": 3,
+              "key": "Voltage",
+              "value": 3.3,
+              "unit": "v"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Current",
+              "value": 20,
+              "unit": "A"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Power",
+              "value": 100,
+              "unit": "W"
+            },
+            {
+              "model_id": 3,
+              "key": "Content to",
+              "value": "node2",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "title": "+5v",
+          "list": [
+            {
+              "model_id": 3,
+              "key": "Voltage",
+              "value": 5,
+              "unit": "v"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Current",
+              "value": 20,
+              "unit": "A"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Power",
+              "value": 100,
+              "unit": "W"
+            },
+            {
+              "model_id": 3,
+              "key": "Content to",
+              "value": "node3",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "title": "+12v",
+          "list": [
+            {
+              "model_id": 3,
+              "key": "Voltage",
+              "value": 12,
+              "unit": "v"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Current",
+              "value": 62.5,
+              "unit": "A"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Power",
+              "value": 750,
+              "unit": "W"
+            },
+            {
+              "model_id": 3,
+              "key": "Content to",
+              "value": "node4",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "title": "-12v",
+          "list": [
+            {
+              "model_id": 3,
+              "key": "Voltage",
+              "value": -12,
+              "unit": "v"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Current",
+              "value": 0.3,
+              "unit": "A"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Power",
+              "value": 3.6,
+              "unit": "W"
+            },
+            {
+              "model_id": 3,
+              "key": "Content to",
+              "value": "node5",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "title": "+5Vsb",
+          "list": [
+            {
+              "model_id": 3,
+              "key": "Voltage",
+              "value": 5,
+              "unit": "v"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Current",
+              "value": 2.5,
+              "unit": "A"
+            },
+            {
+              "model_id": 3,
+              "key": "Max Power",
+              "value": 12.5,
+              "unit": "W"
+            },
+            {
+              "model_id": 3,
+              "key": "Content to",
+              "value": "node6",
+              "unit": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "uutStatus": {
+    "data": [
+      {
+        "label": "Please Select",
+        "value": 0,
+        "disabled": true
+      },
+      {
+        "label": "Disabled",
+        "value": 1
+      },
+      {
+        "label": "Inite",
+        "value": 2
+      },
+      {
+        "label": "Realeased",
+        "value": 3
+      }
+    ]
+  },
+  "parameter": {
+    "data": [
+      {
+        "title": "Space 1",
+        "list": [
+          {
+            "model_id": 2,
+            "key": "2Delta Voltage",
+            "value": [0.01, 0.1],
+            "unit": ["v", "v"]
+          }
+        ]
+      },
+
+      {
+        "title": "source config (GP / vactor)",
+        "list": [
+          {
+            "model_id": 0,
+            "key": "0 ac source",
+            "value": "line_vector.115/60"
+          }
+        ]
+      },
+      {
+        "title": "source seq 1",
+        "list": [
+          {
+            "model_id": 1,
+            "key": "AcVoltage v/mode",
+            "value": ["0.0", "COMS"],
+            "unit": ["v", ""]
+          },
+          {
+            "model_id": 1,
+            "key": "AcFrequency hz/mode",
+            "value": ["40.0", "COMS"],
+            "unit": ["hz", ""]
+          },
+          {
+            "model_id": 1,
+            "key": "DcVoltage v/mode",
+            "value": ["0.0", "COMS"],
+            "unit": ["v", ""]
+          },
+          {
+            "model_id": 1,
+            "key": "OnPhaseMode",
+            "value": ["on(1)", "90"],
+            "unit": ["", "deg"]
+          },
+          {
+            "model_id": 1,
+            "key": "OnPhaseMode",
+            "value": ["on(1)", "0"],
+            "unit": ["", "deg"]
+          },
+
+          {
+            "model_id": 3,
+            "key": "StepTimeSec",
+            "value": "0.0001",
+            "unit": "s"
+          },
+          {
+            "model_id": 3,
+            "key": "SyncCode",
+            "value": "0",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "Term",
+            "value": "HOLD",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "Waveform",
+            "value": "SIN",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "title": "source seq 1",
+        "list": [
+          {
+            "model_id": 1,
+            "key": "AcVoltage v/mode",
+            "value": ["0.0", "COMS"],
+            "unit": ["v", ""]
+          },
+          {
+            "model_id": 1,
+            "key": "AcFrequency hz/mode",
+            "value": ["40.0", "COMS"],
+            "unit": ["hz", ""]
+          },
+          {
+            "model_id": 1,
+            "key": "DcVoltage v/mode",
+            "value": ["0.0", "COMS"],
+            "unit": ["v", ""]
+          },
+          {
+            "model_id": 1,
+            "key": "OnPhaseMode",
+            "value": ["on(1)", "90"],
+            "unit": ["", "deg"]
+          },
+          {
+            "model_id": 1,
+            "key": "OnPhaseMode",
+            "value": ["on(1)", "0"],
+            "unit": ["", "deg"]
+          },
+
+          {
+            "model_id": 3,
+            "key": "StepTimeSec",
+            "value": "0.0001",
+            "unit": "s"
+          },
+          {
+            "model_id": 3,
+            "key": "SyncCode",
+            "value": "0",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "Term",
+            "value": "HOLD",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "Waveform",
+            "value": "SIN",
+            "unit": ""
+          }
+        ]
+      },
+
+      {
+        "title": "Scope Channel 1",
+        "list": [
+          {
+            "model_id": 3,
+            "key": "name",
+            "value": "+5V",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "display",
+            "value": "OFF",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "coupling",
+            "value": "DC",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "bandwidth_limit",
+            "value": "2E+7",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "probe_ratio",
+            "value": "2",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "scale",
+            "value": "2.0E+0",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "position",
+            "value": "0.0E+0",
+            "unit": ""
+          },
+          {
+            "model_id": 3,
+            "key": "probe_type",
+            "value": "VOLT",
+            "unit": ""
+          }
+        ]
+      }
+    ]
+  },
+  "globalParameter": {
+    "data": {
+      "line": [
+        {
+          "title": "line10v",
+          "list": [
+            {
+              "model_id": 3,
+              "key": "Voltage",
+              "value": "10",
+              "unit": "V"
+            },
+            {
+              "model_id": 3,
+              "key": "Frequency",
+              "value": "120",
+              "unit": "Hz"
+            }
+          ]
+        },
+        {
+          "title": "line20v",
+          "list": [
+            {
+              "model_id": 3,
+              "key": "Voltage",
+              "value": "20",
+              "unit": "V"
+            },
+            {
+              "model_id": 3,
+              "key": "Frequency",
+              "value": "60",
+              "unit": "Hz"
+            }
+          ]
+        }
+      ],
+      "load": [
+        {
+          "title": "load1",
+          "list": [
+            {
+              "model_id": 4,
+              "key": "channel",
+              "value": ["CCH", "CC", "CCH", "CCH", "CCH"]
+            },
+            {
+              "model_id": 4,
+              "key": "vo.range",
+              "value": ["H", "HIGH", "H", "H", "H"]
+            },
+            {
+              "model_id": 4,
+              "key": "cur.stat.l1",
+              "value": [11.99, 44.75998, 0.25, 11.99, 2.07]
+            },
+            {
+              "model_id": 4,
+              "key": "cur.stat.rise",
+              "value": [0.01, 100, 0.01, 0.01, 0.01]
+            },
+            {
+              "model_id": 4,
+              "key": "cur.stat.fall",
+              "value": [0.01, 100, 0.01, 0.01, 0.01]
+            },
+            {
+              "model_id": 4,
+              "key": "volt.latc",
+              "value": [1, 1, 1, 1, 1]
+            },
+            {
+              "model_id": 4,
+              "key": "init.response",
+              "value": [0, 0, 0, 0, 0]
+            },
+            {
+              "model_id": 4,
+              "key": "von.value",
+              "value": [0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          ]
+        },
+        {
+          "title": "load2",
+          "list": [
+            {
+              "model_id": 4,
+              "key": "channel",
+              "value": ["CCH", "CC", "CCH", "CCH", "CCH"]
+            },
+            {
+              "model_id": 4,
+              "key": "vo.range",
+              "value": ["H2", "HIGH2", "H2", "H2", "H2"]
+            },
+            {
+              "model_id": 4,
+              "key": "cur.stat.l1",
+              "value": [11.99, 44.75998, 0.25, 11.99, 2.07]
+            },
+            {
+              "model_id": 4,
+              "key": "cur.stat.rise",
+              "value": [0.01, 100, 0.01, 0.01, 0.01]
+            },
+            {
+              "model_id": 4,
+              "key": "cur.stat.fall",
+              "value": [0.01, 100, 0.01, 0.01, 0.01]
+            },
+            {
+              "model_id": 4,
+              "key": "volt.latc",
+              "value": [1, 1, 1, 1, 1]
+            },
+            {
+              "model_id": 4,
+              "key": "init.response",
+              "value": [0, 0, 0, 0, 0]
+            },
+            {
+              "model_id": 4,
+              "key": "von.value",
+              "value": [0.0, 0.0, 0.0, 0.0, 0.0]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

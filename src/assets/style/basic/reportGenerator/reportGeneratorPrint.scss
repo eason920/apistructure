@@ -1,0 +1,22 @@
+@media print {
+  html,
+  body {
+    background-color: #fff;
+  }
+  .header,
+  .breadCrumb,
+  .rootbox,
+  .float_box {
+    display: none !important;
+  }
+  .router_wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .outbox {
+    max-width: 100%;
+  }
+  #list_print {
+    width: 100%;
+  }
+}

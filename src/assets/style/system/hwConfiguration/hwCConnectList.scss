@@ -1,0 +1,93 @@
+// ====================================
+// == GLOBAL
+// ====================================
+$h: 33px;
+$t: 768px;
+
+// ====================================
+// == Container
+// ====================================
+.list_container {
+  height: calc(100% - 45px);
+}
+
+// ====================================
+// == Header
+// ====================================
+.list_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $h;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+.title_name {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.print_btn {
+  @extend %btn;
+  margin-right: 15px;
+  height: 24px;
+  padding: 0 10px;
+  .print_icon {
+    margin-right: 1pt;
+  }
+}
+
+// ====================================
+// == Body
+// ====================================
+.list_content {
+  height: calc(100% - $h - 3px - 40px - 3px);
+  overflow-y: auto;
+}
+.list_container {
+  overflow-y: none;
+}
+.naive_space {
+  overflow-y: none;
+}
+.print_content {
+  overflow-y: none;
+}
+table,
+tbody {
+  overflow-y: auto;
+  height: auto;
+}
+
+// table {
+//   display: block;
+//   height: auto;
+//   width: 100%;
+//   overflow-y: none;
+// }
+
+// tbody {
+//   display: block;
+//   height: 600px;
+//   width: 100%;
+//   overflow-y: scroll;
+// }
+
+// table thead,
+// tbody tr {
+//   display: table;
+//   width: 100%;
+//   table-layout: fixed;
+// }
+
+// ====================================
+// ==  Print Multiple Paging
+// ====================================
+@media print {
+  @page {
+    size: auto !important;
+  }
+  .print_content {
+    height: auto;
+  }
+}

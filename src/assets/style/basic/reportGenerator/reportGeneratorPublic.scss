@@ -1,0 +1,27 @@
+.reportGenerator {
+  height: calc(100% - 45px);
+  width: 100%;
+  display: flex;
+  color: #333;
+}
+
+.btn {
+  @extend %btn;
+  img {
+    margin-right: 3px;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// --------------------------------
+.labelbox {
+  @extend %label_circle;
+  padding-bottom: 0.8vw;
+  li:hover {
+    background-color: #fff;
+    border: solid 1px #333;
+  }
+}

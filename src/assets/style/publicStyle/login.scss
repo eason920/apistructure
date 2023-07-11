@@ -1,0 +1,64 @@
+.item {
+  margin-bottom: 16pt;
+}
+.loginBox {
+  width: 56vw;
+  max-width: 600px;
+  border-radius: 0;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 4vw;
+}
+
+$pt: 3.5vw;
+.loginBox_title {
+  // background-color: #eecfbf;
+  color: #dd5610;
+  font: {
+    weight: bold;
+    size: 24px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: $pt;
+  height: calc(40px + $pt);
+}
+//---------------
+.msgBox {
+  padding: 2vw 3.5vw 3.5vw;
+  color: #333;
+}
+.row {
+  // display: flex;
+  margin-bottom: 1.5vh;
+}
+$w: 8vw;
+.left {
+  width: $w;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5vw;
+  align-items: center;
+}
+.right {
+  width: calc(100% - $w);
+}
+
+//---------------
+.btn {
+  @extend %btn;
+  letter-spacing: 1px;
+  margin: 3vw auto 0;
+  padding: 0 10px;
+}
+
+//--------------
+.memo {
+  color: #555;
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  text-align: center;
+}

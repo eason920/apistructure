@@ -1,0 +1,40 @@
+.reportGenerator {
+  // input
+  .n-base-selection-label,
+  .n-input {
+    background: $color_gray !important;
+    path {
+      fill: orangered;
+    }
+  }
+
+  // date picker
+  .datePicker,
+  .n-input-wrapper,
+  .n-input__input-el {
+    height: 22px;
+  }
+
+  .n-date-picker {
+    .n-input-wrapper {
+      padding: 0;
+    }
+    .n-input__separator {
+      margin-left: -6px;
+    }
+    .n-input__suffix {
+      transform: translateX(-5px);
+    }
+  }
+
+  .datePicker {
+    svg {
+      fill: orangered;
+      margin-right: 5px;
+    }
+  }
+
+  .n-checkbox-box__border {
+    border-color: #555 !important;
+  }
+}

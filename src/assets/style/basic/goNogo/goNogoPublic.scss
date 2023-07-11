@@ -1,0 +1,31 @@
+$gary: rgb(223, 223, 223);
+
+.gonogo_status_result {
+  @extend %flex_center;
+  height: calc(100% - 70px);
+  margin-top: 10px;
+  width: 100%;
+}
+
+.status_result_img_box {
+  @extend %flex_center;
+}
+
+.img_font {
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+label {
+  margin-left: 10pt;
+  margin-right: 10pt;
+  font-weight: bold;
+}
+
+%height_width_set {
+  width: 16vw;
+  height: 34px;
+  padding: 5pt;
+  border-radius: 5pt;
+  background-color: $gary;
+}

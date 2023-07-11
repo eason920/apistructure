@@ -1,0 +1,62 @@
+// ====================================
+// == Body
+// ====================================
+tbale,
+th,
+td {
+  border: 1px solid;
+  border-color: rgb(239, 239, 244);
+}
+.connect_thead {
+  background-color: rgb(248, 248, 248);
+}
+.connect_table {
+  width: 100%;
+  border-style: solid;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+}
+.edit_connect_list {
+  vertical-align: middle;
+  text-align: center;
+  min-width: 5vh;
+  padding: 0;
+  margin: 0;
+}
+
+.edit_node_connect {
+  @extend %btn;
+  height: 24px;
+  width: 80px;
+  padding-left: 10px;
+  margin-right: 3px;
+  .edit_node_connect_icon {
+    margin-right: 1pt;
+  }
+}
+.delete_node_connect {
+  @extend %btn;
+  height: 24px;
+  width: 80px;
+  padding-left: 10px;
+  .delete_node_connect_icon {
+    margin-right: 1pt;
+  }
+}
+.ok_node_connect {
+  @extend %btn;
+  height: 24px;
+  width: 80px;
+  padding-left: 10px;
+  .ok_node_connect_icon {
+    margin-right: 1pt;
+  }
+}
+
+td:nth-child(3) {
+  background-color: #d6eeee;
+}
+td:nth-child(7) {
+  background-color: #d6eeee;
+}

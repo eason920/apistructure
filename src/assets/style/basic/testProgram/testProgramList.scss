@@ -1,0 +1,143 @@
+// ====================================
+// == TITLE
+// ====================================
+.titlebox {
+  // padding-left: 26px;
+  justify-content: flex-end;
+}
+
+// ====================================
+// == LIST
+// ====================================
+$g: 3px;
+
+* {
+  color: #333;
+}
+
+.btn {
+  @extend %btn;
+  img {
+    width: 26px;
+    margin-right: 5px;
+  }
+}
+
+$ml: 12px;
+.margin_left {
+  margin-left: $ml;
+}
+
+.selectbox,
+.mainbox {
+  background-color: #fff;
+}
+
+.selectbox {
+  padding: 0 2vw;
+  height: 55px;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  margin-bottom: $g;
+}
+
+.selectbox_left {
+  display: flex;
+  align-items: center;
+  // width: 250px;
+  span {
+    width: 70px;
+    font-weight: bold;
+  }
+}
+
+.selectbox_input {
+  width: 150px;
+  margin-left: $ml;
+  margin-right: $ml;
+}
+
+.no_result {
+  font-size: 20px;
+  color: #000;
+  margin-top: 20px;
+  text-align: center;
+  background-color: $color_gray;
+  padding: 5px 0;
+}
+
+.mainbox {
+  padding: 1vw 2vw;
+  height: calc(100% - 55px);
+}
+
+.btn_circle {
+  & + .is_1 {
+    margin-left: 8px;
+  }
+  background-color: $color_orange;
+  &:hover {
+    background-color: $color_orange_deep;
+  }
+}
+
+$w1: 180px;
+$w2: 220px;
+$w3: 150px;
+$w4: 150px;
+$w5: 100px;
+$wbtn: 28px;
+.is_1 {
+  width: $w1;
+}
+.is_2 {
+  width: $w2;
+}
+.is_3 {
+  width: $w3;
+}
+.is_4 {
+  width: $w4;
+}
+.is_5 {
+  width: $w5;
+}
+
+.is_6 {
+  width: calc(100% - $w1 - $w2 - $w3 * 2 - $w4 - $w5 - $wbtn) !important;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-right: 0;
+}
+
+@media screen and (max-width: $breakpoint_nb) {
+  $w1: 130px;
+  $w2: 180px;
+  $w3: 120px;
+  $w4: 110px;
+  $w5: 90px;
+  $wbtn: 28px;
+  .is_1 {
+    width: $w1;
+  }
+  .is_2 {
+    width: $w2;
+  }
+  .is_3 {
+    width: $w3;
+  }
+  .is_4 {
+    width: $w4;
+  }
+  .is_5 {
+    width: $w5;
+  }
+
+  .is_6 {
+    width: calc(100% - $w1 - $w2 - $w3 * 2 - $w4 - $w5 - $wbtn) !important;
+  }
+}

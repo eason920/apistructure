@@ -1,0 +1,259 @@
+$gutter: 3px;
+$p: 2vw;
+* {
+  color: #333;
+}
+.btn {
+  @extend %btn;
+  svg,
+  img {
+    color: #fff;
+    width: 26px;
+    margin-right: 3px;
+  }
+  & + .btn {
+    margin-left: 1vw;
+  }
+
+  &.is_into_edit {
+    width: 100px;
+    margin-left: 10px;
+  }
+}
+.title {
+  font-weight: bold;
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.edit_add_ipt {
+  font: {
+    size: 14px;
+    weight: normal;
+  }
+  margin-left: 10px;
+  width: 200px;
+}
+// --------------------------------
+// structure
+.titleBox,
+.leftBox,
+.rightBox,
+.footerBox {
+  background: {
+    color: #fff;
+  }
+  // padding: 5vw;
+}
+.mainBox {
+  display: flex;
+  min-height: 54.5vh;
+}
+.titleBox,
+.groupBox,
+.mainBox,
+.footerBox {
+  width: 100%;
+}
+.titleBox,
+.footerBox {
+  padding: 1vw $p;
+}
+
+// --------------------------------
+$h_label: 35px;
+$h_titlebox: 55px;
+.groupSetting {
+  width: 100%;
+  height: calc(100% - $breadCrumb_height - $h_label);
+}
+
+.groupBox {
+  height: calc(100% - $h_titlebox - 3px);
+}
+// --------------------------------
+// titleBox
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $gutter;
+  height: $h_titlebox;
+  & > div {
+    display: flex;
+  }
+}
+.titleBox_selectBox {
+  align-items: center;
+  & > span {
+    width: 55px;
+    font-weight: bold;
+  }
+  & > div {
+    width: 20vw;
+  }
+}
+// --------------------------------
+// groupBox mainBox
+// leftBox rightBox
+$width_left: 45%;
+.mainBox {
+  margin-bottom: $gutter;
+  height: 100%;
+}
+.leftBox,
+.rightBox {
+  padding: $p;
+}
+.leftBox .is_mask,
+.rightBox.is_mask {
+  position: relative;
+  &:after {
+    content: '請先新增名字';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+  }
+}
+.leftBox {
+  width: calc($width_left - $gutter / 2);
+  margin-right: $gutter;
+  position: relative;
+}
+// transfer
+.n-transfer {
+  & > * {
+    height: 100%;
+  }
+}
+.transfer_title {
+  display: flex;
+  & > * {
+    width: 45%;
+    &:first-child {
+      margin-right: 90px;
+    }
+  }
+}
+.transfer_outer_edit {
+  height: calc(100% - 35px - 25px);
+  position: relative;
+  .n-transfer {
+    height: 100%;
+  }
+}
+.transfer_outer_add {
+  height: calc(100% - 25px - 45px - 25px);
+  position: relative;
+  .n-transfer {
+    height: 100%;
+  }
+}
+.transfer_arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 71px;
+  background: {
+    image: url(../../../../assets/images/transfer_arrow.png);
+  }
+  span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 12px;
+    &:nth-child(2) {
+      padding-top: 20px;
+    }
+  }
+}
+.rightBox {
+  width: calc(100% - $width_left - $gutter / 2);
+}
+
+// listBox
+$width_acount: 70px;
+$width_status: 105px;
+.listBox {
+  height: calc(100% - 15px);
+  overflow-y: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 2vw;
+    &:nth-child(odd) {
+      background-color: #d9d9d9;
+    }
+    .is_id {
+      width: $width_acount;
+    }
+    .is_name {
+      width: calc(100% - $width_acount - $width_status);
+    }
+    .is_status {
+      width: $width_status;
+      text-align: right;
+    }
+  }
+}
+
+// RIGHT
+// permission_group
+.permission_group {
+  display: inline-block;
+  width: 33.3%;
+}
+
+.is_floor2 {
+  background: {
+    image: url(../../../../assets/images/checkbox_dash.png);
+    repeat: no-repeat;
+    position: 0 3px;
+  }
+  padding-left: 25px;
+}
+.is_floor3 {
+  & > * {
+    width: 100%;
+  }
+}
+
+// for add
+.row {
+  display: flex;
+  margin-bottom: 1vw;
+}
+$w: 130px;
+.left {
+  width: $w;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.right {
+  width: calc(100% - $w);
+}
+
+// --------------------------------
+// footerBox
+.footerBox {
+  display: flex;
+  justify-content: flex-end;
+}

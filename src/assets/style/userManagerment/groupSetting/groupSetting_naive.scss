@@ -1,0 +1,69 @@
+$gutter_transfer: 90px;
+.groupSetting {
+  // --------------------------------
+  // transfer
+  .n-transfer-list {
+    width: calc((100% - $gutter_transfer) / 2);
+    background-color: #dfdfdf !important;
+    height: 100%;
+  }
+  .n-transfer-list--source {
+    margin-right: $gutter_transfer;
+  }
+
+  // transfer btn
+  .n-button {
+    background-color: $color_orange;
+    color: #fff !important;
+    &:hover {
+      background-color: $color_orange_deep !important;
+    }
+  }
+
+  // transfer text
+  .n-transfer-list-header__extra {
+    color: $color_orange !important;
+  }
+
+  // --------------------------------
+  // checkbox 各 item 不換行
+  .n-checkbox-group {
+    & > div > div {
+      width: 100% !important;
+    }
+  }
+
+  // --------------------------------
+  // checkbox color
+  .is_visit_checkbox {
+    .n-checkbox__label {
+      color: #333 !important;
+    }
+    .n-checkbox-box__border {
+      border-color: #333 !important;
+    }
+    .n-checkbox-icon svg {
+      fill: #333 !important;
+    }
+  }
+
+  // --------------------------------
+  // input
+  .n-base-selection-label,
+  .n-input {
+    background: #dfdfdf;
+  }
+
+  // --------------------------------
+  // transfer text
+  .n-button__content {
+    font-size: 14px;
+  }
+
+  // --------------------------------
+  .n-base-loading__placeholder {
+    path {
+      fill: $color_orange;
+    }
+  }
+}

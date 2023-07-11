@@ -1,0 +1,27 @@
+.settingblock_title,
+.settingblock_list {
+  // input
+  // selector / input 底色
+  .n-base-selection-label,
+  .n-input {
+    background-color: #ccc !important;
+  }
+
+  // selector / input  placeholder 用色
+  .n-base-selection-placeholder,
+  .n-input__placeholder span {
+    color: #999 !important;
+  }
+}
+
+.settingblock_title {
+  .n-input {
+    width: 120px;
+  }
+}
+
+.settingblock_list {
+  .n-input {
+    width: 60px;
+  }
+}

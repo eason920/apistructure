@@ -1,0 +1,121 @@
+// ====================================
+// == LIST
+// ====================================
+%flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 1vw;
+}
+
+.btn {
+  @extend %btn;
+  img {
+    margin-right: 3px;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+}
+
+$cwh: 18px;
+.btn_circle {
+  @extend %btn_circle;
+  padding: 0 !important;
+  width: $cwh;
+  height: $cwh;
+  &.is_small {
+    background-color: $color_orange;
+  }
+  &.active {
+    background-color: $color_orange;
+  }
+}
+
+// --------------------------------
+.titlebox {
+  @extend %flex;
+  height: 30px;
+  padding-top: 5px;
+  span {
+    font-weight: bold;
+  }
+}
+
+// --------------------------------
+.listbox_item {
+  @extend %flex;
+  &:nth-child(odd) {
+    background-color: $color_gray;
+  }
+  & > * {
+    padding: 0 15px 0 0;
+  }
+  // for not page list
+  // & > div
+  & > span {
+    // for list
+  }
+  &.is_draging {
+    cursor: move;
+  }
+}
+
+$w_btn_edit: 28px;
+.btn_edit {
+  @extend %flex_center;
+  width: $w_btn_edit;
+  height: $w_btn_edit;
+  background-color: #aeaeae;
+  border-radius: 16px;
+  cursor: pointer;
+  img {
+    width: 14px;
+    transform: translate(1px, -0px);
+  }
+  &:hover,
+  &.active {
+    background-color: $color_orange;
+    &:after {
+      display: block;
+    }
+  }
+  //
+  position: relative;
+  &:after {
+    position: absolute;
+    right: -3vw;
+    display: none;
+    content: '';
+    border-style: solid;
+    border-width: 8px 25px;
+    border-color: transparent $color_gray transparent transparent;
+  }
+}
+
+// ====================================
+// == RIGHT
+// ====================================
+// --------------------------------
+// -- LABEL
+// --------------------------------
+.labelbox {
+  @extend %label_circle;
+  height: 30px;
+  border-bottom: solid 1px #fff;
+  &.have_underline {
+    border-bottom: solid 1px #333;
+  }
+  &.for_gp {
+    margin-top: 1vw;
+  }
+}
+
+// --------------------------------
+// -- SCROLLER
+// --------------------------------
+.scroller {
+  overflow-y: auto;
+  position: relative;
+}

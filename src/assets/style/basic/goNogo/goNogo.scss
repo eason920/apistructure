@@ -1,0 +1,335 @@
+$gary: rgb(223, 223, 223);
+.btn {
+  @extend %btn;
+  padding-left: 10px;
+}
+.n_btn {
+  margin-right: 4pt;
+}
+label {
+  margin: 0;
+  font-weight: bold;
+}
+
+$h1: 45px;
+.gonogo_container {
+  // height: calc(100% - #{$h1} - 3px - #{$h1} - 1vh - 65vh - 1vh - #{$h1});
+  height: 100%;
+}
+
+.btn {
+  @extend %btn;
+  height: 34px;
+  img {
+    margin-right: 4pt;
+  }
+}
+.img_size {
+  max-width: 70%;
+  max-height: 70%;
+}
+// header1
+.gonogo_header_1 {
+  display: flex;
+  justify-content: flex-start;
+  height: $h1;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-color: $gary;
+  background-color: #fff;
+}
+
+$userWidth: 190px;
+.gonogo_uut {
+  @extend %flex_start;
+  width: calc(100% - 190px);
+  border-right: 3px;
+  padding: 0 10px;
+  border-right-style: solid;
+  border-color: $gary;
+  display: flex;
+  justify-content: space-between;
+  & > div {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.is_uut {
+  label {
+    width: 50px;
+  }
+}
+.is_model {
+  label {
+    width: 120px;
+  }
+}
+.is_serial {
+  label {
+    width: 160px;
+  }
+  padding: 0 !important;
+}
+.uut_show {
+  @extend %flex_start;
+}
+.model_show {
+  @extend %flex_start;
+}
+.serial_show {
+  @extend %flex_start;
+}
+.btn_barcode {
+  margin-left: 12px;
+  height: 28px;
+  padding-right: 10px;
+  img {
+    height: 20px;
+  }
+}
+
+.gonogo_user {
+  padding: 0 10px;
+  @extend %flex_start;
+  width: $userWidth;
+  border-color: $gary;
+}
+// header2
+.gonogo_header_2 {
+  display: flex;
+  justify-content: flex-start;
+  height: $h1;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-color: $gary;
+  background-color: #fff;
+}
+.gonogo_test_program {
+  padding: 0 10px;
+  label {
+    padding-right: 10px;
+  }
+  @extend %flex_center;
+  width: 36vw;
+  border-right: 3px;
+  border-right-style: solid;
+  border-color: $gary;
+  justify-content: flex-start;
+}
+.tp_select {
+  max-width: 20vw;
+  margin-right: 5pt;
+  border-radius: 5pt;
+}
+.gonogo_order {
+  padding: 0 10px;
+  label {
+    padding-right: 10px;
+  }
+  @extend %flex_center;
+  width: 34vw;
+  border-right: 3px;
+  border-right-style: solid;
+  border-color: $gary;
+  justify-content: flex-start;
+}
+.order_show {
+  width: 12vw;
+}
+
+.gonogo_log {
+  label {
+    padding-right: 5px;
+  }
+  @extend %flex_center;
+  width: 20vw;
+  border-color: $gary;
+  justify-content: flex-end;
+}
+.log_switch {
+  margin-right: 12px;
+}
+// body
+.gonogo_body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-color: $gary;
+  height: calc(100% - (#{$h1} + 3px) * 3 + 10px);
+}
+
+$w1: 30vw;
+.gonogo_test_item {
+  width: calc($w1 - 3px);
+  overflow: auto;
+  padding: 20px;
+  border-right-style: solid;
+  border-color: $gary;
+  background-color: #fff;
+}
+
+.gonogo_test_item_box {
+  @extend %flex_start;
+  flex-direction: column;
+  border-color: none;
+  & > div {
+    @extend %flex_start;
+    width: 100%;
+    line-height: 1.2;
+    padding: 2px 0;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    &:nth-child(odd) {
+      background-color: $gary;
+    }
+  }
+}
+.test_item {
+  display: flex;
+  position: relative;
+  justify-content: space-between !important;
+  span + span {
+    padding-left: 5px;
+  }
+  &:hover {
+    cursor: pointer !important;
+    background: #839af8 !important;
+  }
+}
+.test_item_focus {
+  background: #839af8 !important;
+}
+
+.test_item_item {
+  display: flex;
+}
+.status_pedding > div {
+  // width: 20px;
+  color: rgb(51, 51, 51) !important;
+}
+.status_pass > div {
+  color: rgb(73, 179, 41) !important;
+}
+.status_fail > div {
+  color: rgb(204, 58, 34) !important;
+}
+
+.status_abort_user .status_abort > div {
+  color: rgb(221, 86, 16) !important;
+}
+
+.item_seq {
+  color: rgb(51, 51, 51) !important;
+}
+
+$w_pf: 17px;
+.pass_circle,
+.fail_circle {
+  width: $w_pf;
+  height: $w_pf;
+}
+.pass_circle {
+  border-radius: 50%;
+  background-color: rgb(73, 179, 41) !important;
+}
+
+.fail_circle {
+  border-radius: 50%;
+  background-color: rgb(204, 58, 34) !important;
+}
+
+.gonogo_status {
+  width: calc(100% - $w1);
+  padding: 20px;
+  background-color: #fff;
+}
+.gonogo_status_bar {
+  @extend %flex_center;
+  height: 20px;
+  flex-direction: row;
+  label {
+    padding-right: 10px;
+  }
+}
+.gonogo_status_btn {
+  @extend %flex_center;
+  justify-content: space-between;
+  height: 40px;
+  padding-top: 10px;
+  & > div {
+    height: 28px;
+    img,
+    svg {
+      height: 20px;
+    }
+  }
+}
+
+.btn_go {
+  width: calc(25% - 1px);
+}
+.btn_stop {
+  width: 15vw;
+  cursor: not-allowed;
+  background-color: #aaaaaa;
+  &:hover {
+    background-color: rgb(147, 147, 147);
+  }
+}
+.btn_single {
+  width: 15vw;
+  cursor: not-allowed;
+  background-color: #aaaaaa;
+  &:hover {
+    background-color: rgb(147, 147, 147);
+  }
+}
+.btn_report {
+  width: 15vw;
+  cursor: not-allowed;
+  background-color: #aaaaaa;
+  &:hover {
+    background-color: rgb(147, 147, 147);
+  }
+}
+// footer
+.gonogo_footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 12px;
+  height: $h1;
+  background-color: #fff;
+  label {
+    padding-right: 10px;
+  }
+}
+.btn_footer {
+  margin-right: 5pt;
+  height: 28px;
+  img,
+  svg {
+    height: 18px;
+  }
+  &.is_disable {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}
+
+$w_loading: 17px;
+.n-spin-body {
+  width: $w_loading;
+  height: $w_loading;
+}
+
+.is_report_generator {
+  &.is_disable {
+    background-color: rgb(170, 170, 170) !important;
+  }
+}

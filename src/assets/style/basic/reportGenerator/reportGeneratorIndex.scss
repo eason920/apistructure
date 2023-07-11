@@ -1,0 +1,194 @@
+// ====================================
+// == STRUCTURE
+// ====================================
+$height_title: 40px;
+$height_titleBox: 25px;
+$height_groupBox: 70px;
+
+$width_left: 340px;
+$gutter: 3px;
+.leftBox,
+.rightBox {
+  height: 100%;
+  background-color: #fff;
+  padding: 2vw;
+}
+
+.leftBox {
+  width: $width_left;
+  min-width: $width_left;
+  margin-right: $gutter;
+}
+
+.rightBox {
+  width: calc(100% - #{$width_left} - #{$gutter});
+}
+
+.title {
+  font-weight: bold;
+  height: $height_title;
+}
+
+.btn {
+  &.for_search {
+    width: 85px;
+  }
+  &.for_report {
+    width: 120px;
+  }
+}
+
+// ====================================
+// == LEFT
+// ====================================
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+$width_row_left: 95px;
+.row_left {
+  font-weight: bold;
+  width: $width_row_left;
+}
+
+.row_right {
+  width: calc(100% - $width_row_left);
+}
+
+.btnBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// ====================================
+// == RIGHT
+// ====================================
+.rightBox {
+  position: relative;
+}
+// LABEL
+.labelbox {
+  position: absolute;
+  right: 2vw;
+  top: 2vw;
+}
+
+// LIST BOX 2
+%flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 1vw;
+}
+.listbox {
+  height: calc(100% - #{$height_title} - #{$height_groupBox});
+  overflow-y: auto;
+}
+
+.listbox_item_title {
+  @extend %flex;
+  background-color: $color_gray;
+  border-top: solid 1px #333;
+  line-height: 1.5;
+  padding: 0 1vw;
+  height: 35px;
+}
+
+.listbox_item {
+  @extend %flex;
+  &:nth-child(odd) {
+    background-color: $color_gray;
+  }
+  & > * {
+    padding: 3px 15px 3px 0;
+  }
+  &.is_draging {
+    cursor: move;
+  }
+}
+
+$w1: 215px;
+$w2: 170px;
+
+.is_1,
+.is_2,
+.is_3,
+.is_24 {
+  @extend %row1hide;
+}
+
+.is_1 {
+  width: $w1;
+}
+.is_2 {
+  width: $w2;
+  text-align: right;
+}
+.is_3 {
+  width: calc(100% - #{$w1} - #{$w2});
+}
+
+// --------------------------------
+.listbox_item_card_title {
+  @extend %flex;
+  height: 20px;
+  span {
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+$w21: 40px;
+$w22: 60px;
+$w23: 215px;
+$w25: 70px;
+
+.is_21 {
+  width: $w21;
+}
+
+.is_22 {
+  width: $w22;
+}
+
+.is_23 {
+  width: $w23;
+}
+
+.is_24 {
+  width: calc(100% - #{$w21} - #{$w22} - #{$w23} - #{$w25});
+}
+
+.is_25 {
+  text-align: right;
+  width: $w25;
+}
+
+.listbox_item_card {
+  margin-bottom: 20px;
+}
+
+.listbox_item_card_list_item {
+  @extend %flex;
+  height: 25px;
+  border-top: dotted 1px #ccc;
+  padding: 0 1vw;
+}
+
+// FORMATE UI GROUP
+.groupBox {
+  height: $height_groupBox;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 15px;
+  .tableBox {
+    width: 300px;
+  }
+  .row_left {
+    width: 125px;
+  }
+}

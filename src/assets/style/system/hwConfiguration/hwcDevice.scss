@@ -1,0 +1,14 @@
+// ====================================
+// == DETAIL
+// ====================================
+.infoBox {
+  height: $h_deviceDetail;
+}
+
+// ====================================
+// == NODES
+// ====================================
+.scroller {
+  height: calc(100% - $h_titleBox - $h_deviceDetail - $h_titleBox);
+  overflow-y: auto;
+}

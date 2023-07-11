@@ -1,0 +1,74 @@
+// --------------------------------
+// -- SETTING BLOCK
+// --------------------------------
+.settingblock {
+  &.is_add {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  }
+  &.is_uut_input {
+    bottom: 33px;
+  }
+}
+
+.settingblock_title {
+  display: flex;
+  align-items: center;
+  background-color: #dfdfdf;
+  padding: 2px;
+  border-top: solid 1px #333;
+  span {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+}
+
+.settingblock_list {
+  margin-bottom: 1vw;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > div:first-child {
+      width: 100%;
+      border-bottom: dotted 1px #bbb;
+      display: flex;
+      align-items: center;
+      padding: 1px 10px;
+      span {
+        font-size: 13px;
+        & + span {
+          margin-left: 5px;
+        }
+      }
+    }
+    &:last-child > div {
+      border: none;
+    }
+  }
+}
+
+.settingblock_key {
+  width: 150px;
+  font-weight: bold;
+}
+
+.settingblock_subkey {
+  font-weight: bold;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.settingblock_subkey2 {
+  font-weight: bold;
+  margin-left: 20px !important;
+  margin-right: 5px;
+}
+
+// 新增欄 selector 的寬
+.select_add {
+  width: 150px;
+}

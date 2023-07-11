@@ -1,0 +1,190 @@
+.outbox {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  // height: 1000px;
+  .itembox {
+    border-bottom: 0 !important;
+  }
+}
+
+.title {
+  font-weight: bold;
+}
+
+// --------------------------------
+// -- LABEL
+// --------------------------------
+.labelbox {
+  @extend %label_circle;
+  padding: 0;
+  align-items: center;
+  li {
+    background-color: #bbb;
+  }
+}
+
+.structitle {
+  border-top: solid 1px #333;
+  font-size: 14px;
+  padding-top: 4px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.itembox {
+  background-color: #fff;
+  padding: 13px;
+  margin-bottom: 10px;
+  text-align: left;
+  &:last-child {
+    border-bottom: solid 4vw $color_gray;
+  }
+}
+
+.unittitle {
+  display: flex;
+  justify-content: space-between;
+  span {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+    color: $color_orange;
+  }
+
+  .unittitle_passfail {
+    text-transform: uppercase;
+    color: #080;
+    margin-left: 15px;
+    &.is_fail {
+      color: red;
+    }
+  }
+
+  &.is_uut_basic {
+    margin-bottom: 7px;
+  }
+}
+
+.rootbox {
+  background-color: #fff;
+}
+
+.uutlistbox {
+  padding: 12px 12px 9px;
+  div {
+    display: flex;
+    & + div {
+      margin-top: 6px;
+    }
+  }
+  .title {
+    margin-right: 10px;
+  }
+}
+
+.uuttitlebox {
+  background-color: #999;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 5px;
+  padding: 5px 15px;
+  display: flex;
+  position: relative;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .title {
+    margin-right: 10px;
+    color: #fff;
+  }
+}
+
+.float_box {
+  position: fixed;
+  z-index: 99;
+  right: 2vw;
+  bottom: 2vw;
+  display: flex;
+  .btn {
+    margin-left: 10px;
+  }
+}
+
+// ====================================
+// == LIST PRINT
+// ====================================
+#list_print {
+  padding-bottom: 50px;
+}
+
+.report_end {
+  background: #ccc;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.p_logo,
+.sysmsg {
+  display: none;
+}
+
+@media print {
+  @page {
+    // size: A4 portrait;
+    // margin: 0.5cm;
+    // 頁面第一個段落的行數 v
+    // widows: 2;
+    // 頁面最後一個段落的行數 v
+    // orphans: 4;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  #list_print {
+    background-color: #fff;
+  }
+
+  .p_logo,
+  .sysmsg {
+    display: block;
+  }
+
+  .p_logo {
+    margin: 250px auto 20px;
+    width: 200px;
+  }
+
+  .sysmsg {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .itembox {
+    page-break-after: always;
+  }
+
+  // 於此只控制 UUT Base Info 的 .table v
+  // .table {
+  //   border: solid;
+  //   page-break-before: avoid;
+  //   page-break-inside: avoid;
+  //   page-break-after: avoid;
+  // }
+
+  .report_end {
+    display: none;
+  }
+}
